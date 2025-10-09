@@ -1,4 +1,4 @@
-name: Fair_LCX
+name: Fair
 channels:
   - pytorch
   - pyg
@@ -218,3 +218,4 @@ dependencies:
       - wrapt==1.17.0
       - wurlitzer==3.1.1
 prefix: D:\conda\environment\Fair_LCX
+
