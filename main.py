@@ -31,7 +31,7 @@ def run(data, args):
         best_val_tradeoff = 0
         for epoch in range(args.epochs):
             optimizer_d.zero_grad()
-            encoder.eval()  # 冻结 encoder
+            encoder.eval() 
             with torch.no_grad():
                 z_detach = encoder(data.x, data.edge_index)
             pred_s = discriminator(z_detach)
