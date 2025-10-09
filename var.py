@@ -74,7 +74,6 @@ class SNLoss(nn.Module):
         int_nll = -F.binary_cross_entropy_with_logits(int_y_pred, y_float).mean()
         inter_norm = self.intervention_loss(intervention_train)
         targets_loss = self.targets_loss(y_pred, int_y_pred).mean()
-        # KL loss: 用m_train, v_train, y
         kl = self.kl_loss(m_train, v_train, y).mean() + self.kl_loss(int_m_train, int_v_train, y).mean()
 
 
@@ -83,6 +82,7 @@ class SNLoss(nn.Module):
             return all_loss + self.kl_lambda * kl
         else:
             return -all_loss + self.kl_lambda * kl
+
 
 
 
