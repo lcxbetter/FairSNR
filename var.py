@@ -38,7 +38,7 @@ class SNLoss(nn.Module):
     def kl_normal(self, qm, qv, pm, pv):
         # qm, pm: (N, dim)
         # qv, pv: (N, dim)
-        return ((qm - pm) ** 2 / (pv + 1e-6)).mean()  # 可选加权 KL
+        return ((qm - pm) ** 2 / (pv + 1e-6)).mean()  
 
     def condition_prior(self, scale, label, dim, device):
         mean = ((label - scale[0]) / (scale[1] - scale[0])).reshape(-1, 1).repeat(1, dim)
@@ -83,6 +83,7 @@ class SNLoss(nn.Module):
             return all_loss + self.kl_lambda * kl
         else:
             return -all_loss + self.kl_lambda * kl
+
 
 
 
