@@ -10,6 +10,7 @@ FairSNR is a causality-guided method that improves the fairness of GNNs while pr
 # Citation
 If you find it useful, please cite our paper. Thank you!
 
+```bibtex
 @inproceedings{liu2026learning,
   title={Learning Fair Graph Representations via Probability of Necessity and Sufficiency},
   author={Liu, Chuxun and Chen, Qingfeng and Cheng, Debo and Gan, Jiangzhang and Li, Jiuyong and Liu, Lin},
@@ -19,3 +20,4 @@ If you find it useful, please cite our paper. Thank you!
   pages={23667--23675},
   year={2026}
 }
+```
