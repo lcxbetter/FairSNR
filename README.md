@@ -3,9 +3,10 @@ A PyTorch implementation of "Learning Fair Graph Representations Using Sufficien
 
 # Overview
 FairSNR is a causality-guided method that improves the fairness of GNNs while preserving predictive utility by learning necessary and sufficient node representations and reducing sensitive-attribute leakage
+<img width="1293" height="482" alt="image" src="https://github.com/user-attachments/assets/57e3d780-902f-4598-a484-fdc08f26aff3" />
 
 # Datasets download
-
+To download datasets, please refer to these two repositories  https://github.com/chirag-agarwall/nifty or https://github.com/LuoRenqiang/FairGP
 
 # Citation
 If you find it useful, please cite our paper. Thank you!
